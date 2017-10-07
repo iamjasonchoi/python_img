@@ -23,7 +23,7 @@ class makidir(object):
     def UpdateImageSize(self,filepath):
         try:
             images = Image.open(filepath)
-            out = images.resize((200, 200), Image.ANTIALIAS)
+            out = images.resize((300, 300), Image.ANTIALIAS)
             out.save(filepath)
             return True
         except Exception as e:
