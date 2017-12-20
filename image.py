@@ -20,7 +20,7 @@ class spiderclass(object):
             html.encoding = 'utf-8'
             return html.text
         except Exception as e:
-            print(e, '抓取失败',url)
+            print(e, '该URL抓取失败',url)
             html.close()
             return ''
     def spider_xpath(self, htmls, xpath,url,imgtype):
